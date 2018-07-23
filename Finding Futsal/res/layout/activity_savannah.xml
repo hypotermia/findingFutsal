@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/biru"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Savannah" >
+
+    <TextView
+        android:id="@+id/NamaLap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="none"
+        android:text="Savannah Futsal"
+        android:textColor="@color/font1"
+        android:textColorHint="@color/font1"
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" >
+
+        <requestFocus />
+    </TextView>
+
+    <Button
+        android:id="@+id/hubungi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/scrollView1"
+        android:layout_alignRight="@+id/scrollView1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:text="Hubungi" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hubungi"
+        android:layout_alignLeft="@+id/NamaLap"
+        android:layout_alignRight="@+id/NamaLap"
+        android:layout_below="@+id/NamaLap"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="288dp"
+            android:layout_height="332dp"
+            android:orientation="vertical" >
+            
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/NamaLap"
+                android:layout_weight="0.02"
+                android:padding="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/savannah" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/br1" />
+
+            <TextView
+                android:id="@+id/AlamatLap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:ems="10"
+                android:inputType="textMultiLine|none"
+                android:text="Review : Kualitas lapangan kurang baik, lapangan Indoor, adanya tempat duduk untuk menunggu, akses yang mudah \nAlamat :\nJln. Sosial No.41, Daan Mogot Km.1 , Jakarta Barat, DKI Jakarta \n\nBuka  : 06.00 - 23.00\nHarga : Rp. 100.000/Jam\n Jenis Lapangan : Rumput Sintetis \nuntuk pemesanan penyewaan klik tombol Hubungi"
+                android:textColor="@color/font1"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

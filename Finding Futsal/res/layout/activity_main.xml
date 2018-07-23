@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/zzzz"
+    android:paddingLeft="22dp"
+    android:paddingRight="22dp"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bantu_button"
+        android:layout_below="@+id/bantu_button"
+        android:layout_marginLeft="13dp"
+        android:text="@string/bantuan"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/hitam" />
+
+    <TextView
+        android:id="@+id/TextView07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/settings_button"
+        android:layout_below="@+id/settings_button"
+        android:layout_marginLeft="25dp"
+        android:text="@string/exit"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/hitam" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/settings_button"
+        android:layout_alignLeft="@+id/lp_button"
+        android:layout_marginBottom="43dp"
+        android:text="@string/lapfut"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/hitam" />
+
+    <TextView
+        android:id="@+id/TextView08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView07"
+        android:layout_alignBottom="@+id/TextView07"
+        android:layout_alignLeft="@+id/tentang_button"
+        android:paddingLeft="10dp"
+        android:text="@string/tentang"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/hitam" />
+
+    <ImageButton
+        android:id="@+id/settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bantu_button"
+        android:layout_alignTop="@+id/tentang_button"
+        android:onClick="onClick"
+        android:src="@drawable/exit" />
+
+    <ImageButton
+        android:id="@+id/tentang_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp"
+        android:onClick="onClick"
+        android:src="@drawable/about" />
+
+    <ImageButton
+        android:id="@+id/bantu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/lp_button"
+        android:layout_marginRight="37dp"
+        android:onClick="onClick"
+        android:src="@drawable/help" />
+
+    <ImageButton
+        android:id="@+id/lp_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_alignLeft="@+id/tentang_button"
+        android:onClick="onClick"
+        android:src="@drawable/futsal" />
+
+</RelativeLayout>

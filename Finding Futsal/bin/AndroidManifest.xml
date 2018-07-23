@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zakki.findingfutsal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <permission
+        android:name="com.zakki.findingfutsal.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="com.zakki.findingfutsal.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyARe7ktbSwyrNg30i4p2k-KaalbwIKGLlY" />
+
+        <activity
+            android:name="com.zakki.findingfutsal.SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.MainActivity"
+            android:label="@string/title_activity_main"
+            android:parentActivityName="com.zakki.findingfutsal.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.SplashScreen" />
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.Settings"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.zakki.findingfutsal.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.Update_User"
+            android:label="@string/title_activity_update__user"
+            android:parentActivityName="com.zakki.findingfutsal.Settings" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.Settings" />
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.UpdateEM"
+            android:label="@string/title_activity_update_em"
+            android:parentActivityName="com.zakki.findingfutsal.Settings" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.Settings" />
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.Maps"
+            android:label="@string/title_activity_maps"
+            android:parentActivityName="com.zakki.findingfutsal.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.List"
+            android:label="@string/title_activity_list"
+            android:parentActivityName="com.zakki.findingfutsal.Maps" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.Maps" />
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.tentang"
+            android:label="@string/title_activity_tentang"
+            android:parentActivityName="com.zakki.findingfutsal.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.Baba"
+            android:label="@string/title_activity_baba"
+            android:parentActivityName="com.zakki.findingfutsal.List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.List" />
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.Savannah"
+            android:label="@string/title_activity_savannah"
+            android:parentActivityName="com.zakki.findingfutsal.List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.List" />
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.Cakra"
+            android:label="@string/title_activity_cakra"
+            android:parentActivityName="com.zakki.findingfutsal.List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.List" />
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.Bywi"
+            android:label="@string/title_activity_bywi"
+            android:parentActivityName="com.zakki.findingfutsal.List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.List" />
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.Centro"
+            android:label="@string/title_activity_centro"
+            android:parentActivityName="com.zakki.findingfutsal.List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.List" />
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.Total"
+            android:label="@string/title_activity_total"
+            android:parentActivityName="com.zakki.findingfutsal.List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.List" />
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.Center"
+            android:label="@string/title_activity_center"
+            android:parentActivityName="com.zakki.findingfutsal.List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.List" />
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.Ground"
+            android:label="@string/title_activity_ground"
+            android:parentActivityName="com.zakki.findingfutsal.List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.List" />
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.Star"
+            android:label="@string/title_activity_star"
+            android:parentActivityName="com.zakki.findingfutsal.List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.List" />
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.Pelangi"
+            android:label="@string/title_activity_pelangi"
+            android:parentActivityName="com.zakki.findingfutsal.List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.List" />
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.Elang"
+            android:label="@string/title_activity_elang"
+            android:parentActivityName="com.zakki.findingfutsal.List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.List" />
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.Hut"
+            android:label="@string/title_activity_hut"
+            android:parentActivityName="com.zakki.findingfutsal.List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.List" />
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.Crystal"
+            android:label="@string/title_activity_crystal"
+            android:parentActivityName="com.zakki.findingfutsal.List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.List" />
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.Magnet"
+            android:label="@string/title_activity_magnet"
+            android:parentActivityName="com.zakki.findingfutsal.List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.List" />
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.Bee"
+            android:label="@string/title_activity_bee"
+            android:parentActivityName="com.zakki.findingfutsal.List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.List" />
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.Rakyat"
+            android:label="@string/title_activity_rakyat"
+            android:parentActivityName="com.zakki.findingfutsal.List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.List" />
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.Help"
+            android:label="@string/title_activity_help"
+            android:parentActivityName="com.zakki.findingfutsal.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.Waw"
+            android:label="@string/title_activity_waw" >
+        </activity>
+        <activity
+            android:name="com.zakki.findingfutsal.Champions"
+            android:label="@string/title_activity_champions"
+            android:parentActivityName="com.zakki.findingfutsal.List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zakki.findingfutsal.List" />
+        </activity>
+    </application>
+
+</manifest>
